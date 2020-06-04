@@ -20,12 +20,13 @@ body {background-color: powderblue;}
   
   <div id="lokalizacje">
   <ol>
-    <li v-for="lokalizacja in lokalizacje">
+    <button v-for="lokalizacja in lokalizacje" v-on:click="zmiana_lokalizacji(lokalizacja)">
       {{ lokalizacja.nazwa }}
+      
     </li>
   </ol>
 </div>
-  <object id="gra" type="image/svg+xml" data="ekrany/start.svg"/>
+  <object id="lokalizacja" type="image/svg+xml" data="ekrany/start.svg"/>
 </div>
 
   <script>
@@ -46,7 +47,11 @@ var app = new Vue({
   "plik": "lok3.svg"
 }
 ]
-  }
+  },
+   methods: {
+    zmiana_lokalizacji: function (lok) {
+      alert(lok.plik);
+    }
 })
 
   </script>
