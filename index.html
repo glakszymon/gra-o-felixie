@@ -4,7 +4,7 @@
 <title>Title of the document</title>
 <style>
 body {background-color: powderblue;}
-#gra {
+#lokal {
   with: 1024px; 
   height: 576px;
   margin-left:auto;
@@ -20,7 +20,7 @@ body {background-color: powderblue;}
   
   <div id="lokalizacje">
   <ol>
-    <button v-for="lokalizacja in lokalizacje" v-on:click="zmiana_lokalizacji(lokalizacja)">
+    <button id="lokal" v-for="lokalizacja in lokalizacje" v-on:click="zmiana_lokalizacji(lokalizacja)">
       {{ lokalizacja.nazwa }}
       
     </li>
@@ -52,6 +52,7 @@ var app = new Vue({
     zmiana_lokalizacji: function (lok) {
       alert(lok.plik);
     }
+   }
 })
 
   </script>
