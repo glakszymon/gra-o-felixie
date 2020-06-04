@@ -19,6 +19,7 @@ body {background-color: powderblue;}
 <div id="app">
   
   <div id="lokalizacje">
+    Przeskocz do:
   <ol>
     <button id="lokal" v-for="lokalizacja in lokalizacje" v-on:click="zmiana_lokalizacji(lokalizacja)">
       {{ lokalizacja.nazwa }}
