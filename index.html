@@ -4,7 +4,7 @@
 <title>Title of the document</title>
 <style>
 body {background-color: powderblue;}
-#lokal {
+#lokalizacja {
   with: 1024px; 
   height: 576px;
   margin-left:auto;
@@ -51,7 +51,7 @@ var app = new Vue({
   },
    methods: {
     zmiana_lokalizacji: function (lok) {
-      alert(lok.plik);
+      document.getElementById("lokalizacja").setAttribute('data', 'lok.plik');
     }
    }
 })
