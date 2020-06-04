@@ -16,8 +16,40 @@ body {background-color: powderblue;}
 </head>
 
 <body>
+<div id="app">
+  
+  <div id="lokalizacje">
+  <ol>
+    <li v-for="lokalizacja in lokalizacje">
+      {{ lokalizacja.nazwa }}
+    </li>
+  </ol>
+</div>
+  <object id="gra" type="image/svg+xml" data="ekrany/start.svg"/>
+</div>
 
-        <object id="gra" type="image/svg+xml" data="ekrany/start.svg"/>
+  <script>
+var app = new Vue({
+  el: '#app',
+  data: {
+    lokalizacje: [
+{
+  "nazwa": "lokalizacja 1",
+  "plik": "lok1.svg"
+},
+{
+  "nazwa": "lokalizacja 2",
+  "plik": "lok2.svg"
+},
+{
+  "nazwa": "lokalizacja 3",
+  "plik": "lok3.svg"
+}
+]
+  }
+})
+
+  </script>
        
 </body>
 
