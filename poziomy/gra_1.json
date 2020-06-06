@@ -1,7 +1,7 @@
 {
     "lokalizacje": "szkola_1.json",
     "zadania": [{
-        "opis": "Witaj, nazywam się Manfred i potrzebuję twojej pomocy.\nGdy Felix, Net i Nika poszli odzyskać zdjęcia książki, straciłem z nimi łączność. Pomóż mi ich odnaleźć.",
+        "opis": "Witaj, nazywam się Manfred i potrzebuję twojej pomocy.\nGdy Felix, Net i Nika poszli odzyskać zdjęcia książki, straciłem z nimi łączność.\nPomóż mi ich odnaleźć.",
         "pytanie": "Wpisz 12345",
         "kod": "box",
         "wynik": "12345"
