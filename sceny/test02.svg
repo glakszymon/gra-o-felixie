@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="600"
+   viewBox="0 0 211.66667 158.75"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="test02.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="314.02742"
+     inkscape:cy="318.64956"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#999999;fill-opacity:0.548387;stroke:#666666;stroke-width:0.0529167;stroke-dasharray:0.0529167, 0.105833"
+       id="rect10"
+       width="32.626331"
+       height="12.097154"
+       x="49.614029"
+       y="98.737457"
+       onclick="parent.klik('box', 'szary', 'c')" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.548387;stroke:#666666;stroke-width:0.0529167;stroke-dasharray:0.0529167, 0.105833"
+       id="rect12"
+       width="84.23558"
+       height="8.5453444"
+       x="31.649303"
+       y="29.056341"
+       onclick="parent.klik('box', 'yellow', 'c')" />
+    <rect
+       style="fill:#0000ff;fill-opacity:0.548387;stroke:#666666;stroke-width:0.0529167;stroke-dasharray:0.0529167, 0.105833"
+       id="rect14"
+       width="71.30722"
+       height="14.58951"
+       x="31.649303"
+       y="37.601685"
+       onclick="parent.klik('owal', 'blue', 'c')"
+       ry="7.294755" />
+    <rect
+       style="fill:#008000;fill-opacity:0.548387;stroke:#666666;stroke-width:0.0529167;stroke-dasharray:0.0529167, 0.105833"
+       id="rect16"
+       width="41.431488"
+       height="15.822608"
+       x="151.90953"
+       y="13.420056"
+       onclick="parent.app.appklik()" />
+    <rect
+       style="fill:#ff0000;fill-opacity:0.548387;stroke:#666666;stroke-width:0.0529167;stroke-dasharray:0.0529167, 0.105833"
+       id="rect18"
+       width="48.556835"
+       height="13.970908"
+       x="111.03957"
+       y="116.74374"
+       onclick="parent.appklik()" />
+    <ellipse
+       style="fill:#999999;fill-opacity:0.548387;stroke:#666666;stroke-width:0.0529167;stroke-dasharray:0.0529167, 0.105833"
+       id="path38"
+       cx="145.07921"
+       cy="90.892403"
+       rx="12.992262"
+       ry="5.8011999"
+       onclick="parent.klik('owal', 'szary', 'c')" />
+    <text
+       transform="scale(1.2225132,0.8179871)"
+       id="text41"
+       y="89.117538"
+       x="49.35186"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.3362px;line-height:48.4047px;font-family:Kleymissky;-inkscape-font-specification:Kleymissky;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.00019px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="stroke-width:2.00019px"
+         y="89.117538"
+         x="49.35186"
+         id="tspan39"
+         sodipodi:role="line">Scena 2</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+{
+    "lokalizacje": "szkola_1.json",
+    "zadania": [{
+        "opis": "Cześć, jestem Manfred, AI Felixa\n\nZaginął Felix z resztą paczki. Musisz mi pomóc ich odnaleźć.\n\nNa początek musimy dostać się do komputera Felixa... może tam jest jakaś wskazówka. niestaty komputer jest zabezpieczony kodem.\nWiem, że Felix użył kodu będącego sumą liczb z pudełek w szkole.\nPoszukaj ich.",
+        "pytanie": "Wpisz 12345",
+        "kod": "box",
+        "wynik": "12345"
+    }, {
+        "opis": "W komputerze jest link do drona - tu musimy jednak znaleźć hasło",
+        "kod": "grey",
+        "wynik": "test"
+    }]
+}
