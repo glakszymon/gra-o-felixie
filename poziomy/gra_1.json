@@ -1,7 +1,7 @@
 {
     "lokalizacje": "szkola_1.json",
     "zadania": [{
-        "opis": "Witaj, nazywam się Manfred i potrzebuję twojej pomocy.\nGdy Felix, Net i Nika poszli odzyskać zdjęcia książki, straciłem z nimi łączność.\nPomóż mi ich odnaleźć.\n\nMusimy znaleźć hasło do komputera neta. Wiem, że Net lubi pudełka i że zostawiał poszlaki, gdyby zapomniał hasła. Poszukajmy  poszlak na korytarzu.",
+        "opis": "Witaj, nazywam się Manfred i potrzebuję twojej pomocy.\nGdy Felix, Net i Nika poszli odzyskać zdjęcia książki, straciłem z nimi łączność.\nPomóż mi ich odnaleźć.\n\nMusimy znaleźć hasło do komputera neta. Wiem, że Net lubi pudełka i że zostawiał poszlaki, gdyby zapomniał hasła. Net często układa hasła sumując liczby, to może być przydatna inforacja.",
         "pytanie": "Wpisz 12345",
         "kod": "box",
         "wynik": "12345"
