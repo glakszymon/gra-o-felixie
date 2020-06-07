@@ -146,7 +146,7 @@
       <img id="komputer_ikona" src="img/comp_icon.svg" width="100" />
       <div id="dialog">
           <div>{{ manfred }}</div>
-          <div id="obszar_odpowiedzi"><span id="pytanie_o_odpowiedz">{{ prompt }}</span><input id="pole_odpowiedz" v-model="odpowiedz" keyup="app.send()" /></div>
+          <div id="obszar_odpowiedzi"><span id="pytanie_o_odpowiedz">{{ prompt }}</span><input id="pole_odpowiedz" v-if="daj_wpisac" v-model="odpowiedz" keyup="app.send()" /></div>
       </div>
     </div>
   </div>
@@ -155,7 +155,7 @@
     var app = new Vue({
       el: '#app',
       data: {
-        ilosc_gier: 1,
+        ilosc_gier: 2,
         lokalizacje: [],
         zadania: [],
         aktualna_lokalizacja: null,
@@ -165,7 +165,8 @@
         aktualne_zadanie: null,
         manfred: null,
         prompt: null,
-        odpowiedz: null
+        odpowiedz: null,
+        daj_wpisac: true
       },
       methods: {
         init: function() {
@@ -238,6 +239,7 @@
           this.prompt = this.zadania[this.aktualne_zadanie].pytanie;
           if (!this.prompt)
             this.prompt = "Podaj kod";
+          this.daj_wpisac = this.zadania[this.aktualne_zadanie].wynik != null;
 
           this.aktualny_kod = this.zadania[this.aktualne_zadanie].kod;
         },
@@ -251,7 +253,6 @@
         laduj_gre: function () {
           axios.get('poziomy/gra_' + this.aktualna_gra + ".json")
           .then(function (response) {
-            console.log(response);
             app.nowa_gra(response);
           })
           .catch(function (error) {
@@ -261,7 +262,6 @@
         laduj_lokalizacje: function (plik) {
           axios.get('poziomy/' + plik)
           .then(function (response) {
-            console.log(response);
             app.lokalizacje = response.data;
           })
           .catch(function (error) {

@@ -1,10 +1,10 @@
 [{
-  "nazwa": "lokalizacja pokój Feliksa",
-  "plik": "test01.svg"
+  "nazwa": "Korytarz",
+  "plik": "korytarz.svg"
 }, {
-  "nazwa": "lokalizacja 2",
-  "plik": "test02.svg"
+  "nazwa": "Szafki",
+  "plik": "szafki.svg"
 }, {
-  "nazwa": "lokalizacja 3",
-  "plik": "test03.svg"
+  "nazwa": "Tablica",
+  "plik": "tablica.svg"
 }]
