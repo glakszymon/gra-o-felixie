@@ -1,13 +1,10 @@
 {
     "lokalizacje": "szkola_1.json",
     "zadania": [{
-        "opis": "Witaj, nazywam się Manfred i potrzebuję twojej pomocy.\nGdy Felix, Net i Nika poszli odzyskać zdjęcia książki, straciłem z nimi łączność.\nPomóż mi ich odnaleźć.\n\nMusimy znaleźć hasło do komputera neta. Wiem, że Net lubi pudełka i że zostawiał poszlaki, gdyby zapomniał hasła.\nNet często układa hasła sumując liczby, to może być przydatna inforacja.",
-        "pytanie": "Hasło do komputera: 12345",
+        "opis": "Witaj, nazywam się Manfred i potrzebuję twojej pomocy.\nGdy Felix, Net i Nika poszli odzyskać zdjęcia książki, straciłem z nimi łączność.\nPomóż mi ich odnaleźć.\n\nMusimy znaleźć hasło do komputera neta. Wiem, że Net lubi pudełka i że zostawiał poszlaki, gdyby zapomniał hasła.\nNet często układa liczby od najmniejszej, rozdzielając je minusami, to może być przydatna inforacja.",
+        "pytanie": "Hasło do komputera:",
         "kod": "box",
-        "wynik": "12345"
-    }, {
-        "opis": "W komputerze jest link do drona - tu musimy jednak znaleźć hasło",
-        "kod": "grey",
-        "wynik": "test"
-    }]
+        "wynik": "2-21-80"
+    }
+    ]
 }

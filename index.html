@@ -82,7 +82,7 @@
       padding: 5px;
       color: black;
       background-color: lightsteelblue;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: bold;
       font-style: italic;
       text-transform: uppercase;
@@ -136,10 +136,10 @@
         <!--div id="plecak_naglowek">
           Znaleziska
         </div-->
+        <img src="img/bag_icon.svg" width="100" />
         <div class="rzeczwplecaku" v-for="rzecz in plecak">
           {{ rzecz.wartosc }}
         </div>
-        <img src="img/bag_icon.svg" width="100" />
       </div>
     </div>
     <div id="komputer" class="kolumny">
@@ -186,6 +186,12 @@
             return;
 
           this.plecak.push(rzecz);
+          if (this.zadania[this.aktualne_zadanie].licznik > 0) {
+            if (this.plecak.length == this.zadania[this.aktualne_zadanie].licznik) {
+              this.nowe_zadanie();
+              return;
+            }
+          }
         },
         send: function() {
           let kopia = this.odpowiedz.toLowerCase();

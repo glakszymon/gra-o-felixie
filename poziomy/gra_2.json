@@ -1,0 +1,10 @@
+{
+    "lokalizacje": "dom_felixa_1.json",
+    "zadania": [{
+        "opis": "Patrz, komputer jest połączony z robotem Felixa. Dzięki temu mamy lokalizację jego domu. Spróbuj złożyć drona, abyśmy mogli poszukać nim Felixa i paczkę. ",
+        "pytanie": "Znajdź 3 elementy mini helikoptera.",
+        "kod": "dron",
+        "licznik": 3
+    }
+    ]
+}
