@@ -1,8 +1,8 @@
 {
     "lokalizacje": "szkola_1.json",
     "zadania": [{
-        "opis": "Cześć, jestem Manfred, AI Felixa\n\nZaginął Felix z resztą paczki. Musisz mi pomóc ich odnaleźć.\n\nNa początek musimy dostać się do komputera Felixa... może tam jest jakaś wskazówka. niestaty komputer jest zabezpieczony kodem.\nWiem, że Felix użył kodu będącego sumą liczb z pudełek w szkole.\nPoszukaj ich.",
-        "pytanie": "Wpisz 12345",
+        "opis": "Witaj, nazywam się Manfred i potrzebuję twojej pomocy.\nGdy Felix, Net i Nika poszli odzyskać zdjęcia książki, straciłem z nimi łączność.\nPomóż mi ich odnaleźć.\n\nMusimy znaleźć hasło do komputera neta. Wiem, że Net lubi pudełka i że zostawiał poszlaki, gdyby zapomniał hasła.\nNet często układa hasła sumując liczby, to może być przydatna inforacja.",
+        "pytanie": "Hasło do komputera: 12345",
         "kod": "box",
         "wynik": "12345"
     }, {
