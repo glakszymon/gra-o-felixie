@@ -1,4 +1,14 @@
-[{
+[
+{
+    "nazwa": "Korytarz",
+    "plik": "korytarz.svg"
+    }, {
+    "nazwa": "Szafki",
+    "plik": "szafki.svg"
+    }, {
+    "nazwa": "Tablica",
+    "plik": "tablica.svg"
+    }, {
     "nazwa": "Dom Felixa",
     "plik": "dom_felixa.svg"
 }]

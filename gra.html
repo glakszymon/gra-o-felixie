@@ -133,9 +133,6 @@
                 type="image/svg+xml" v-bind:data="'sceny/' + lokal.plik"></object>
       </div>
       <div id="plecak">
-        <!--div id="plecak_naglowek">
-          Znaleziska
-        </div-->
         <img src="img/bag_icon.svg" width="100" />
         <div class="rzeczwplecaku" v-for="rzecz in plecak">
           {{ rzecz.wartosc }}
@@ -209,6 +206,7 @@
         nowa_gra: function (gra) {
           this.aktualna_lokalizacja = null;
           this.laduj_lokalizacje(gra.data.lokalizacje);
+          this.zmiana_lokalizacji(this.lokalizacje[0]);
           this.zadania = gra.data.zadania;
           this.aktualne_zadanie = null;
           this.nowe_zadanie();
