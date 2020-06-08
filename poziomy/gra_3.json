@@ -1,9 +1,9 @@
 {
     "lokalizacje": "zamek_1.json",
     "zadania": [{
-        "opis": "Musimy zdobyć pieniądze, aby pojechać w góry i tam poszukać poszlak. Bilet kosztuje 40zł(3 banknoty).",
+        "opis": "Musimy zdobyć pieniądze, aby pojechać w góry i tam poszukać poszlak. Bilet kosztuje 40zł(3 banknoty do znalezienia).",
         "pytanie": "Litera pod którą kryje się reszta:",
         "kod": "mamona",
-        "wynik": "E"
+        "wynik": "e"
     }]
 }
