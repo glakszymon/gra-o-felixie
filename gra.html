@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Title of the document</title>
+  <style>
+    body { background-color: #232323; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 12px;}
+    #app {
+      width: 1200px;
+      margin-left:auto;
+      margin-right:auto;
+      display: block;
+    }
+    .kolumny {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .kolumny:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    #lokalizacje {
+      float: left;
+      width: 200px;
+      padding: 5px 15px;
+      background-color: #dddee0;
+      border-radius: 4px;
+      border: 1px solid black;
+      text-align: center;
+    }
+    #lokalizacja {
+      width: 800px; 
+      height: 600px;
+      margin-left:auto;
+      margin-right:auto;
+      display: block;
+      border: 3px black solid;
+      border-radius: 4px;
+      float: left;
+      background-color: black;
+    }
+    #plecak {
+      float: left;
+      width: 120px;
+      padding: 5px 15px;
+      background-color: #dddee0;
+      border-radius: 4px;
+      border: 1px solid black;
+      text-align: center;
+    }
+    .scena_przycisk {
+      display: block;
+      width: 100%;
+      margin-bottom: 2px;
+      border: 1px black solid;
+      border-radius: 4px;
+      padding: 3px;
+      color: white;
+      background-color: darkgreen;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    #plecak_naglowek {
+      display: block;
+      width: 100%;
+      margin-bottom: 5px;
+      color: lightsteelblue;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+    .rzeczwplecaku {
+      display: block;
+      margin-bottom: 2px;
+      margin-left: 0;
+      margin-right: 0;
+      border: 1px black solid;
+      border-radius: 4px;
+      padding: 5px;
+      color: black;
+      background-color: lightsteelblue;
+      font-size: 20px;
+      font-weight: bold;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+    #komputer {
+      border: 1px black solid;
+      border-radius: 4px;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #dddee0;
+    }
+    #komputer_ikona {
+      float: left;
+      width: 100px;
+      margin: 10px 10px 25px 10px;
+    }
+    #dialog {
+      float: left;
+      white-space: pre-wrap;
+      letter-spacing: .10em;
+      font-weight: bold;
+      font-size: 13px;
+      width: 1000px;
+    }
+    #obszar_odpowiedzi {
+      margin: 0 10px;
+    }
+    #pytanie_o_odpowiedz {
+      margin-right: 10px;
+      text-transform: uppercase;
+    }
+  </style>
+  <script type="text/javascript" src="lib/vue.js"></script>
+  <script type="text/javascript" src="lib/axios.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    
+    <div class="kolumny">
+      <div id="lokalizacje">
+        <img src="img/map_icon.svg" width="100" />
+        <button class="scena_przycisk" v-for="lokalizacja in lokalizacje" v-on:click="zmiana_lokalizacji(lokalizacja)">
+          {{ lokalizacja.nazwa }}
+        </button>
+      </div>
+      <div id="lokalizacja">
+        <object v-for="lokal in lokalizacje" v-bind:id="lokal.plik" v-show="aktualna_lokalizacja == lokal.plik" 
+                type="image/svg+xml" v-bind:data="'sceny/' + lokal.plik"></object>
+      </div>
+      <div id="plecak">
+        <!--div id="plecak_naglowek">
+          Znaleziska
+        </div-->
+        <img src="img/bag_icon.svg" width="100" />
+        <div class="rzeczwplecaku" v-for="rzecz in plecak">
+          {{ rzecz.wartosc }}
+        </div>
+      </div>
+    </div>
+    <div id="komputer" class="kolumny">
+      <img id="komputer_ikona" src="img/comp_icon.svg" width="100" />
+      <div id="dialog">
+          <div>{{ manfred }}</div>
+          <div id="obszar_odpowiedzi"><span id="pytanie_o_odpowiedz">{{ prompt }}</span><input id="pole_odpowiedz" v-if="daj_wpisac" v-model="odpowiedz" keyup="app.send()" /></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        ilosc_gier: 2,
+        lokalizacje: [],
+        zadania: [],
+        aktualna_lokalizacja: null,
+        plecak: [],
+        aktualna_gra: 1,
+        aktualny_kod: 'box',
+        aktualne_zadanie: null,
+        manfred: null,
+        prompt: null,
+        odpowiedz: null,
+        daj_wpisac: true
+      },
+      methods: {
+        init: function() {
+          const node = document.getElementById("pole_odpowiedz");
+          node.addEventListener("keyup", function(event) {
+              if (event.key === "Enter") {
+                  app.send();
+              }
+          });
+
+          this.laduj_gre();
+        },
+        zmiana_lokalizacji: function (scena) {
+          this.aktualna_lokalizacja = scena.plik;
+        },
+        plecak_dodaj: function (rzecz) {
+          if (this.juz_jest(rzecz))
+            return;
+
+          this.plecak.push(rzecz);
+          if (this.zadania[this.aktualne_zadanie].licznik > 0) {
+            if (this.plecak.length == this.zadania[this.aktualne_zadanie].licznik) {
+              this.nowe_zadanie();
+              return;
+            }
+          }
+        },
+        send: function() {
+          let kopia = this.odpowiedz.toLowerCase();
+          this.odpowiedz = null;
+
+          if (kopia == this.zadania[this.aktualne_zadanie].wynik.toLowerCase()) {
+            this.nowe_zadanie();
+            return;
+          }
+          
+          this.manfred += "\n\n";
+          this.manfred += "Sprawdzam [" + kopia + "]... Nie pasuje."
+        },
+        nowa_gra: function (gra) {
+          this.aktualna_lokalizacja = null;
+          this.laduj_lokalizacje(gra.data.lokalizacje);
+          this.zadania = gra.data.zadania;
+          this.aktualne_zadanie = null;
+          this.nowe_zadanie();
+        },
+        nastepna_gra: function () {
+          this.aktualna_gra += 1;
+
+          if (this.aktualna_gra > this.ilosc_gier) {
+            window.open("koniec.html", "_self"); 
+            return;
+          }
+
+          this.laduj_gre();
+        },
+        nowe_zadanie: function () {
+          this.plecak = [];
+          if (this.aktualne_zadanie == null)
+            this.aktualne_zadanie = 0;
+          else
+            this.aktualne_zadanie += 1;
+
+          if (this.zadania.length <= this.aktualne_zadanie) {
+            this.nastepna_gra();
+            return;
+          }
+            
+          this.manfred = this.zadania[this.aktualne_zadanie].opis;
+          this.prompt = this.zadania[this.aktualne_zadanie].pytanie;
+          if (!this.prompt)
+            this.prompt = "Podaj kod";
+          this.daj_wpisac = this.zadania[this.aktualne_zadanie].wynik != null;
+
+          this.aktualny_kod = this.zadania[this.aktualne_zadanie].kod;
+        },
+        juz_jest(rzecz) {
+          for (w of this.plecak) {
+            if (w.wartosc == rzecz.wartosc)
+              return true;
+          }
+          return false;
+        },
+        laduj_gre: function () {
+          axios.get('poziomy/gra_' + this.aktualna_gra + ".json")
+          .then(function (response) {
+            app.nowa_gra(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+        },
+        laduj_lokalizacje: function (plik) {
+          axios.get('poziomy/' + plik)
+          .then(function (response) {
+            app.lokalizacje = response.data;
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+        }
+      }
+    })
+
+    function nastepne_pytanie() {
+      app.plecak_czysc();
+    }
+
+    function klik(kod, wartosc, ikona) {
+      if (kod != app.aktualny_kod)
+        return;
+
+      var rzecz = {"wartosc": wartosc, "ikona": ikona};
+      app.plecak_dodaj(rzecz);
+    }
+
+    app.init();
+  </script>
+       
+</body>
+</html>
