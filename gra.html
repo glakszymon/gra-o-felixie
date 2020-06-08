@@ -143,7 +143,7 @@
       <img id="komputer_ikona" src="img/comp_icon.svg" width="100" />
       <div id="dialog">
           <div>{{ manfred }}</div>
-          <div id="obszar_odpowiedzi"><span id="pytanie_o_odpowiedz">{{ prompt }}</span><input id="pole_odpowiedz" v-if="daj_wpisac" v-model="odpowiedz" keyup="app.send()" /></div>
+          <div id="obszar_odpowiedzi"><span id="pytanie_o_odpowiedz">{{ prompt }}</span><input id="pole_odpowiedz" v-show="daj_wpisac" v-model="odpowiedz" keyup="app.send()" /></div>
       </div>
     </div>
   </div>
