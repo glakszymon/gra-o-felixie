@@ -7925,7 +7925,7 @@ HJqRz/OdVcH/D95xYMf2fmbVAAAAAElFTkSuQmCC
        x="0.20080051"
        y="0.16122356" />
     <text
-       onclick="parent.klik('drzewo', 'Drzewo=2', '')"
+       onclick="parent.klik('wiezowiec', 'Drzewo=2')"
        id="text624"
        y="154.26985"
        x="9.7991867"
@@ -7937,11 +7937,11 @@ HJqRz/OdVcH/D95xYMf2fmbVAAAAAElFTkSuQmCC
          id="tspan622"
          sodipodi:role="line">2</tspan></text>
     <text
-       onclick="parent.klik('wieżowiec', 'Wieżowiec=4', '')"
+       onclick="parent.klik('wiezowiec', 'Wieżowiec=4')"
        id="text628"
        y="78.85614"
        x="96.235695"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.264583;"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.264583;cursor:pointer"
        xml:space="preserve"><tspan
          style="stroke-width:0.264583;fill:#333333;"
          y="78.85614"
@@ -7949,7 +7949,7 @@ HJqRz/OdVcH/D95xYMf2fmbVAAAAAElFTkSuQmCC
          id="tspan626"
          sodipodi:role="line">4</tspan></text>
     <text
-       onclick="parent.klik('chmurka', 'Chmurka=1 ', '')"
+       onclick="parent.klik('wiezowiec', 'Chmurka=1')"
        id="text632"
        y="48.4165"
        x="176.70901"
@@ -7961,7 +7961,7 @@ HJqRz/OdVcH/D95xYMf2fmbVAAAAAElFTkSuQmCC
          id="tspan630"
          sodipodi:role="line">1</tspan></text>
     <text
-       onclick="parent.klik('niebo', 'Niebo=8 ', '')"
+       onclick="parent.klik('wiezowiec', 'Niebo=8 ')"
        id="text636"
        y="14.070278"
        x="8.9023714"
