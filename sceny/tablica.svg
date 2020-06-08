@@ -77,7 +77,7 @@
        transform="rotate(-15)" />
     <g
        id="g562"
-       onclick="parent.klik('box', '2', '')"
+       onclick="parent.klik('box', '2')"
        style="cursor:pointer">
       <g
          style="fill-rule:evenodd;stroke:none;stroke-linejoin:round"
