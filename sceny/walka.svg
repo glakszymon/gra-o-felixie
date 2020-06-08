@@ -12070,7 +12070,7 @@ LOZzioHGGIW0mzgUzyMKBngA3v/u/wPMtvZ112QfEwAAAABJRU5ErkJggg==
        x="-0.21773896"
        y="-0.05537134" />
     <image
-       onclick="parent.klik('pistolet', 'pistolet')"
+       onclick="parent.klik('walka', 'Pistolet')"
        transform="rotate(101.01311)"
        id="image716"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAD0CAYAAADQZdViAAAABHNCSVQICAgIfAhkiAAAIABJREFU
@@ -12431,7 +12431,7 @@ AElFTkSuQmCC
        x="13.711687"
        y="-30.965679" />
     <image
-       onclick="parent.klik('lacznik', 'łącznik')"
+       onclick="parent.klik('walka', 'Łącznik')"
        transform="rotate(89.97961)"
        id="image730"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAACvCAYAAAASRpWFAAAABHNCSVQICAgIfAhkiAAACvhJREFU
@@ -12493,7 +12493,7 @@ fk3wVThrANYI/wfpXdGvra/zxwAAAABJRU5ErkJggg==
        x="128.44385"
        y="-163.77913" />
     <image
-       onclick="parent.klik('raczka', 'rączka')"
+       onclick="parent.klik('walka', 'Rączka')"
        id="image744"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAABmCAYAAACAy2IqAAAABHNCSVQICAgIfAhkiAAAF/NJREFU
 eJy9nGuSJEdy33/uHplV3T1vgJwlabYSV2vGbzLKVtIJoCOQR1geYXEE7RGIK+gIxBG4Mn3QV8Jo

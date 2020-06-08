@@ -1,0 +1,9 @@
+{
+    "lokalizacje": "zamek_1.json",
+    "zadania": [{
+        "opis": "Musimy zdobyć pieniądze, aby pojechać w góry i tam poszukać poszlak. Niestety nie wiem, ile kosztuje bilet, ale na pewno powyżej 40.\n\nCzy stać nas na bilet w góry?",
+        "pytanie": "Nasze pieniądze(Sama kwota):",
+        "kod": "mamona",
+        "wynik": "60"
+    }]
+}

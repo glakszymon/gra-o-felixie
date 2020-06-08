@@ -1,0 +1,9 @@
+{
+    "lokalizacje": "ferie.json",
+    "zadania": [{
+        "opis": "Poszukajmy jakiś rzeczy które zostawiłą klasa Felixa mogą nam się przydać.",
+        "pytanie": "Hasło:",
+        "kod": "bluza",
+        "wynik": "wieżowiec"
+    }]
+}
