@@ -260,7 +260,7 @@
           axios.get('poziomy/' + plik)
           .then(function (response) {
             app.lokalizacje = response.data;
-            this.zmiana_lokalizacji(this.lokalizacje[0]);
+            app.zmiana_lokalizacji(this.lokalizacje[0]);
           })
           .catch(function (error) {
             console.log(error);
