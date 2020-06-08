@@ -206,7 +206,6 @@
         nowa_gra: function (gra) {
           this.aktualna_lokalizacja = null;
           this.laduj_lokalizacje(gra.data.lokalizacje);
-          this.zmiana_lokalizacji(this.lokalizacje[0]);
           this.zadania = gra.data.zadania;
           this.aktualne_zadanie = null;
           this.nowe_zadanie();
@@ -261,6 +260,7 @@
           axios.get('poziomy/' + plik)
           .then(function (response) {
             app.lokalizacje = response.data;
+            this.zmiana_lokalizacji(this.lokalizacje[0]);
           })
           .catch(function (error) {
             console.log(error);
