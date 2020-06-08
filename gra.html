@@ -214,7 +214,8 @@
           this.aktualna_gra += 1;
 
           if (this.aktualna_gra > this.ilosc_gier) {
-            window.open("koniec.html", "_self"); 
+            alert(window.Location);
+            window.location.assign("koniec.html"); 
             return;
           }
 
