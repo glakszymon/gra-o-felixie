@@ -1,0 +1,8 @@
+{
+    "lokalizacje": "walka.json",
+    "zadania": [{
+        "opis": "Super znaleźliśmy Felixa, Neta i Nikę, tylko że teraz musimy się stąd wydostać, pokonując roboty.",
+        "licznik": 2,
+        "kod": "walka",
+    }]
+}
