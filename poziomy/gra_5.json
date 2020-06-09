@@ -1,9 +1,9 @@
 {
-    "lokalizacje": "walka.json",
+    "lokalizacje": "wiezowiec.json",
     "zadania": [{
-        "opis": "Super znaleźliśmy Felixa, Neta i Nikę, tylko że teraz musimy się stąd wydostać, pokonując roboty.",
-        "pytanie": "Odszukaj 3 elementy pistoletu na wodę",
-        "licznik": 3,
+        "opis": "To w tym budynku straciłem kontakt z Felixem i paczką. Musimy znaleźć hasło do wejścia.",
+        "wnik": 28416,
+        "pytanie": "",
         "kod": "walka"
     }]
 }
