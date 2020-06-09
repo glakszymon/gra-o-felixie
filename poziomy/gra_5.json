@@ -1,10 +1,9 @@
 {
-    "lokalizacje": "wiezowiec.json",
+    "lokalizacje": "ferie.json",
     "zadania": [{
-        "opis": "To w tym budynku straciłem kontakt z Felixem i paczką. Musimy znaleźć hasło do wejścia.\n\nKlucz szyfru: sky, river, street, tower block, grass",
-        "wynik": "28416",
-        "pytanie": "podaj kod",
-        "kod": "walka"
+        "opis": "Poszukajmy jakiś rzeczy które zostawiła klasa Felixa mogą nam się przydać.",
+        "pytanie": "Hasło:",
+        "kod": "bluza",
+        "wynik": "wieżowiec"
     }]
 }
-

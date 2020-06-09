@@ -1,9 +1,9 @@
 {
-    "lokalizacje": "zamek_1.json",
+    "lokalizacje": "dom_felixa_1.json",
     "zadania": [{
-        "opis": "Musimy zdobyć pieniądze, aby pojechać w góry i tam poszukać poszlak. Bilet kosztuje 40zł(3 banknoty do znalezienia).",
-        "pytanie": "Litera pod którą kryje się reszta:",
-        "kod": "mamona",
-        "wynik": "e"
+    "opis": "No nie, dron też jest zablokowany hasłem.",
+    "pytanie": "Zielone plakietki od największej:",
+    "kod": "haslo_dron",
+    "wynik": "521"
     }]
 }

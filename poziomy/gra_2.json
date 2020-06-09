@@ -8,13 +8,3 @@
     }
     ]
 }
-
-{
-    "lokalizacje": "dom_felixa_1.json",
-    "zadania": [{
-    "opis": "No nie, dron też jest zablokowany hasłem.",
-    "pytanie": "Zielone plakietki od największej:",
-    "kod": "haslo_dron",
-    "wynik": "521"
-    }]
-}

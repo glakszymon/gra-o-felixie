@@ -1,9 +1,9 @@
 {
-    "lokalizacje": "ferie.json",
+    "lokalizacje": "zamek_1.json",
     "zadania": [{
-        "opis": "Poszukajmy jakiś rzeczy które zostawiła klasa Felixa mogą nam się przydać.",
-        "pytanie": "Hasło:",
-        "kod": "bluza",
-        "wynik": "wieżowiec"
+        "opis": "Musimy zdobyć pieniądze, aby pojechać w góry i tam poszukać poszlak. Bilet kosztuje 40zł(3 banknoty do znalezienia).",
+        "pytanie": "Litera pod którą kryje się reszta:",
+        "kod": "mamona",
+        "wynik": "e"
     }]
 }
