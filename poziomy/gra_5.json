@@ -2,7 +2,8 @@
     "lokalizacje": "walka.json",
     "zadania": [{
         "opis": "Super znaleźliśmy Felixa, Neta i Nikę, tylko że teraz musimy się stąd wydostać, pokonując roboty.",
-        "licznik": 2,
+        "pytanie": "Odszukaj 3 elementy pistoletu na wodę",
+        "licznik": 3,
         "kod": "walka"
     }]
 }
