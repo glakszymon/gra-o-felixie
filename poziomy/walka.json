@@ -1,29 +1,4 @@
 [
-    , {
-    "nazwa": "Wiezowiec",
-    "plik": "wiezowiec.svg"
-    }, {
-    "nazwa": "Sypialnia chłopców",
-    "plik": "góry.svg"
-    }, {
-    "nazwa": "Zamek",
-    "plik": "zamek.svg"
-    }, {
-    "nazwa": "Dom Felixa",
-    "plik": "dom_felixa.svg"
-    }, {
-    "nazwa": "Korytarz",
-    "plik": "korytarz.svg"
-    }, {
-    "nazwa": "Szafki",
-    "plik": "szafki.svg"
-    }, {
-    "nazwa": "Tablica",
-    "plik": "tablica.svg"
-    }
-]
-
-[
     {
     "nazwa": "Korytarz",
     "plik": "korytarz.svg"
