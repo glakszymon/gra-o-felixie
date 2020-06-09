@@ -1,7 +1,7 @@
 {
     "lokalizacje": "ferie.json",
     "zadania": [{
-        "opis": "Poszukajmy jakiś rzeczy które zostawiłą klasa Felixa mogą nam się przydać.",
+        "opis": "Poszukajmy jakiś rzeczy które zostawiła klasa Felixa mogą nam się przydać.",
         "pytanie": "Hasło:",
         "kod": "bluza",
         "wynik": "wieżowiec"
