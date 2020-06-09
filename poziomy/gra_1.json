@@ -1,7 +1,7 @@
 {
     "lokalizacje": "szkola_1.json",
     "zadania": [{
-        "opis": "Witaj, nazywam się Manfred i potrzebuję twojej pomocy.\nGdy Felix, Net i Nika poszli odzyskać zdjęcia książki, straciłem z nimi łączność.\nPomóż mi ich odnaleźć.\n\nMusimy znaleźć hasło do komputera neta. Wiem, że Net lubi pudełka i że zostawiał poszlaki, gdyby zapomniał hasła.\nNet często układa liczby od najmniejszej, rozdzielając je minusami, to może być przydatna inforacja.",
+        "opis": "Witaj, nazywam się Manfred i potrzebuję twojej pomocy.\nGdy Felix, Net i Nika poszli odzyskać zdjęcia książki, straciłem z nimi łączność.\nPomóż mi ich odnaleźć.\n\nMusimy znaleźć hasło do komputera Neta. Wiem, że Net lubi pudełka i że zostawiał poszlaki, gdyby zapomniał hasła.\nNet często układa liczby od najmniejszej, rozdzielając je minusami, to może być przydatna informacja.",
         "pytanie": "Hasło do komputera:",
         "kod": "box",
         "wynik": "2-21-80"
