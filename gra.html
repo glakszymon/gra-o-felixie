@@ -214,7 +214,10 @@
           this.aktualna_gra += 1;
 
           if (this.aktualna_gra > this.ilosc_gier) {
-             window.location.assign("koniec.html"); 
+            let url = new URL("koniec.html", window.location.href);
+            console.log(window.location.href);
+            console.log(url.href);
+            window.location.assign(url.href); 
             return;
           }
 
