@@ -2,7 +2,7 @@
     "lokalizacje": "wiezowiec.json",
     "zadania": [{
         "opis": "To w tym budynku straciłem kontakt z Felixem i paczką. Musimy znaleźć hasło do wejścia.",
-        "wnik": 28416,
+        "wynik": 28416,
         "pytanie": "podaj kod",
         "kod": "walka"
     }]
